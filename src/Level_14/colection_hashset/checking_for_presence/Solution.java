@@ -1,6 +1,7 @@
 package Level_14.colection_hashset.checking_for_presence;
 
 import java.util.HashSet;
+import java.util.Iterator;
 import java.util.Set;
 
 public class Solution {
@@ -14,6 +15,8 @@ public class Solution {
             add("Привет");
         }};
         checkWords("Прив", set);
+
+        Iterator<String> iterator = set.iterator();
     }
 
     public static boolean checkWords(String string, Set<String> hashSet){
